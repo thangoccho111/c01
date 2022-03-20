@@ -11,18 +11,43 @@
   <body>
     <header>
       <h1>Trang web đầu tiên</h1>
-      <img src="./img/planets.gif" alt="" />
+      <img src="./img/planets.gif" alt="Planets" usemap="#planets" />
+      <map name="planets">
+        <area
+          shape="rect"
+          coords="1,2,80,125"
+          alt="Sun"
+          href="./pages/sun.html"
+        />
+        <area
+          shape="circle"
+          coords="91,59,5"
+          alt="Mercur"
+          href="./pages/mercur.html"
+        />
+        <area
+          shape="circle"
+          coords="124,58,10"
+          alt="Venus"
+          href="./pages/venus.html"
+        />
+      </map>
     </header>
     <nav style="background-color: yellow">
-      <a href="#footer">Footer</a> <a href="#">Sun</a><a href="#">Gọi ngay</a>
-      <!-- <a href="javascript:alert('chào bạn');">Lời chào</a> -->
-      <a href="#" onclick="alert('chào bạn')">Lời chào</a>
-      <a href="#">Liên kết</a>
-      <a href="#" style="float: right">Tìm kiếm</a>
+      <a href="#footer">Footer</a> <a href="./pages/sun.html">Sun</a
+      ><a href="tel:+840816020416">Gọi ngay</a>
+      <a href="./js/script.js">Lời chào</a>
+      <a href="mailto:academy@kmin.edu.vn">Liên kết</a>
+      <a
+        target="_blank"
+        href="https://kminacademy.notion.site/C01-HTML-9977313042134b01a89587aec8657905"
+        style="float: right"
+        >Tìm kiếm</a
+      >
     </nav>
     <main>
       <aside style="width: 70%">
-        <h1>Tiêu đề 01</h1>
+        <h3>Tiêu đề 01</h3>
         <b>Mô tả ngắn, Dec 7, 2025</b>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
@@ -37,7 +62,7 @@
           fugit aliquid, eligendi explicabo est suscipit cupiditate consequuntur
           ducimus!
         </p>
-        <h1>Tiêu đề 2</h1>
+        <h3>Tiêu đề 2</h3>
         <b>Mô tả ngắn, Dec 7, 2025</b>
         <p>Danh sách học sinh tham gia Bug Sharing</p>
         <table width="100%">
@@ -57,7 +82,7 @@
             <td>31231289731</td>
           </tr>
         </table>
-        <h1>Tiêu đề 3</h1>
+        <h3>Tiêu đề 3</h3>
         <p>Các món có thể gọi:</p>
         <ul>
           <li>Coffee</li>
@@ -100,6 +125,7 @@
         </ul>
         <div>
           <b>Đăng ký khóa học</b>
+          <b>Phần này em chưa làm kịp</b>
         </div>
       </aside>
       <aside style="width: 28%">
@@ -120,7 +146,9 @@
 
         <div style="display: flex; flex-direction: column">
           <b>Chúc mừng năm mới: v</b>
-          <img src="./img/noel.gif" alt="Chúc mừng" />
+          <a href="https://kmin.edu.vn/"
+            ><img src="./img/noel.gif" alt="Chúc mừng"
+          /></a>
         </div>
 
         <div style="display: flex; flex-direction: column">
